@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     opt = parser.parse_args()
     print(opt)
-    command = f"python3 ./yolov5/detect.py --source {opt.source} --weights {opt.weights} --conf 0.5"
+    command = f"python3 ./yolov5_repo/detect.py --source {opt.source} --weights {opt.weights} --conf 0.5"
     try:
         os.system(command)
     except:
